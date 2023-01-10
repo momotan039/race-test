@@ -1,4 +1,19 @@
-const players = ["tahani", "sara", "ali", "shibly", "ahmad", "mousa", "rami", "tala", "hamdi", "talal"]
+const players=["tahani","sara","ali","shibly","ahmad","mousa","rami","tala","hamdi","talal"]
+const selected=[];
+
+function pickRunner(){
+
+    let arr=[];
+    // Returns a random integer from 0 to 9:
+    while(arr.length<3){
+        let num=Math.floor(Math.random() * 10)+1;
+        if(arr.includes(num)==false){
+            arr.push(num);
+        }
+    }
+
+    return arr;
+}
 
 function getPlayers(){
 const selected = [];
@@ -16,4 +31,6 @@ const selected = [];
 function startRace() {
     const players=getPlayers()
 }
+
 startRace();
+
