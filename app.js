@@ -1,10 +1,8 @@
 const players=["tahani","sara","ali","shibly","ahmad","mousa","rami","tala","hamdi","talal"]
 const selected=[];
 
-function placeRunner(arrNames, arrayNums) {
-  arrNames = ['farid', 'yousef', 'taha'];
-  arrayNums = [10, 30, 20]; //10 20 30 
-  let newNums=arrayNums.sort();
+function placeRunner( arrayNums) {
+  return arrayNums.sort();
 }
 
 
@@ -37,6 +35,13 @@ const selected = [];
 
 function startRace() {
     const players=getPlayers()
+    const nums=placeRunner(pickRunner())
+    let result=`Congrats! 
+    ${players[2]} is first Place with the time of ${nums[2]}
+    ${players[1]} is second Place with the time of ${nums[1]}
+    ${players[0]} is third Place with the time of ${nums[0]}
+    `;
+    console.log(result)
 }
 
 startRace();
