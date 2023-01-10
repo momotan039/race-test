@@ -1,6 +1,13 @@
 const players=["tahani","sara","ali","shibly","ahmad","mousa","rami","tala","hamdi","talal"]
 const selected=[];
 
+function placeRunner(arrNames, arrayNums) {
+  arrNames = ['farid', 'yousef', 'taha'];
+  arrayNums = [10, 30, 20]; //10 20 30 
+  let newNums=arrayNums.sort();
+}
+
+
 function pickRunner(){
 
     let arr=[];
@@ -33,4 +40,3 @@ function startRace() {
 }
 
 startRace();
-
